@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://yourbusiness.com/sitemap.xml
+Sitemap: https://cybizinc.pages.dev/sitemap.xml
 
 # Block known aggressive bots
 User-agent: GPTBot
