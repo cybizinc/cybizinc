@@ -1,11 +1,88 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
+/* Global */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
 }
-header, main, footer {
-  padding: 2rem;
-  text-align: center;
-}   
+a { text-decoration: none; }
+
+/* Header / Hero */
+header { 
+    background: #1E3A8A; 
+    color: #fff; 
+    padding: 60px 20px; 
+    text-align: center; 
+}
+header h1 { 
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+}
+header p { 
+    font-size: 1.2em; 
+    margin-bottom: 20px; 
+}
+header .btn { 
+    background: #ffcc00; 
+    color: #111; 
+    padding: 12px 25px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+}
+
+/* Sections */
+section { 
+    padding: 50px 20px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+#services ul { 
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+/* Process Section */
+.process-steps { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}
+.step { 
+    background: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+@media(min-width:768px){ 
+    .process-steps { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+
+/* Contact Section */
+#contact { 
+    text-align: center; 
+}
+#contact a { 
+    color: #1E3A8A; 
+    font-weight: bold; 
+}
+#contact a:hover { 
+    text-decoration: underline; 
+}
+#contact p { 
+    margin-bottom: 10px; 
+    font-size: 1.1em; 
+}
+
+/* Pricing Section */
+#pricing { 
+    text-align: center; 
+}
+
+/* Footer */
+footer { 
+    background: #111; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+}
