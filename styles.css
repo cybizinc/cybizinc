@@ -4,41 +4,62 @@ body {
     margin: 0; 
     padding: 0; 
     color: #333; 
+    line-height: 1.6;
 }
-a { text-decoration: none; }
 
-/* Header / Hero */
+a { 
+    text-decoration: none; 
+}
+
+/* Hero Section */
 header { 
-    background: #1E3A8A; 
+    background: linear-gradient(135deg, #1E3A8A, #2563EB);
     color: #fff; 
-    padding: 60px 20px; 
+    padding: 80px 20px; 
     text-align: center; 
 }
+
 header h1 { 
     font-size: 2.5em; 
-    margin-bottom: 10px; 
+    margin-bottom: 15px; 
 }
+
 header p { 
     font-size: 1.2em; 
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
 }
+
 header .btn { 
     background: #ffcc00; 
     color: #111; 
     padding: 12px 25px; 
     font-weight: bold; 
     border-radius: 5px; 
+    display: inline-block;
+    transition: 0.3s;
+}
+
+header .btn:hover {
+    background: #e6b800;
 }
 
 /* Sections */
 section { 
-    padding: 50px 20px; 
+    padding: 60px 20px; 
     max-width: 900px; 
     margin: 0 auto; 
 }
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Services */
 #services ul { 
     list-style-type: disc; 
     margin-left: 20px; 
+    font-size: 1.1em;
 }
 
 /* Process Section */
@@ -47,36 +68,48 @@ section {
     grid-template-columns: 1fr; 
     gap: 20px; 
 }
+
 .step { 
-    background: #f0f0f0; 
+    background: #f9fafb; 
     padding: 20px; 
     border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
 @media(min-width:768px){ 
     .process-steps { 
         grid-template-columns: repeat(2, 1fr); 
     } 
 }
 
-/* Contact Section */
+/* Pricing */
+#pricing { 
+    text-align: center; 
+}
+
+/* Contact */
 #contact { 
     text-align: center; 
 }
+
+#contact iframe {
+    margin-top: 20px;
+    border: none;
+    max-width: 100%;
+}
+
 #contact a { 
     color: #1E3A8A; 
     font-weight: bold; 
 }
+
 #contact a:hover { 
     text-decoration: underline; 
 }
+
 #contact p { 
     margin-bottom: 10px; 
     font-size: 1.1em; 
-}
-
-/* Pricing Section */
-#pricing { 
-    text-align: center; 
 }
 
 /* Footer */
@@ -85,4 +118,5 @@ footer {
     color: #fff; 
     text-align: center; 
     padding: 20px; 
+    margin-top: 40px;
 }
